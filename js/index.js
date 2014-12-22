@@ -58,10 +58,7 @@ var app = {
 
         scanner.scan( function (result) { 
 
-            alert("We got a barcode\n" + 
-            "Result: " + result.text + "\n" + 
-            "Format: " + result.format + "\n" + 
-            "Cancelled: " + result.cancelled);  
+            alert('<video src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" controls>Your browser does not support the <code>video</code> element.</video>');  
 
            console.log("Scanner result: \n" +
                 "text: " + result.text + "\n" +
