@@ -52,13 +52,13 @@ var app = {
     },
 
     scan: function() {
-        console.log('scanning');
+        //console.log('scanning');
         
         var scanner = cordova.require("cordova/plugin/BarcodeScanner");
 
         scanner.scan( function (result) { 
 
-            alert('<video src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" controls>Your browser does not support the <code>video</code> element.</video>');  
+           // alert('<video src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" controls>Your browser does not support the <code>video</code> element.</video>');  
 
            console.log("Scanner result: \n" +
                 "text: " + result.text + "\n" +
