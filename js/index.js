@@ -45,7 +45,7 @@ var app = {
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
 
-        listeningElement..innerHTML ='<video src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" controls>Your browser does not support the <code>video</code> element.</video>';
+        listeningElement.innerHTML ='<video src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" controls>Your browser does not support the <code>video</code> element.</video>';
 
 
         console.log('Received Event: ' + id);
