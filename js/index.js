@@ -45,8 +45,8 @@ var app = {
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
 
-        listeningElement.innerHTML ='<video src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" controls>Your browser does not support the <code>video</code> element.</video>';
-
+        listeningElement.setAttribute('style', 'display:none;');
+        receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
     },
@@ -67,7 +67,7 @@ var app = {
                 "text: " + result.text + "\n" +
                 "format: " + result.format + "\n" +
                 "cancelled: " + result.cancelled + "\n");
-            document.getElementById("info").innerHTML ='<video src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" controls>Your browser does not support the <code>video</code> element.</video>';
+            document.getElementById("info").innerHTML = result.text;
             console.log(result);
             /*
             if (args.format == "QR_CODE") {
